@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>form</title>
+</head>
+
+<body id="formbody">
+    
+    <img class="imgcontainer" src="DevcomBlack.png" alt="devcom">
+    <div class="remains">
+        <div style="position:initial; text-align: start;color: mediumblue;">
+            <h1>DEVCOM GCEK</h1>
+            <h2>ATTENDENCE REGISTER</h2>
+            </div>
+    
+    <div class="formfill">
+    <form  name="forms" action="form.php" method="POST">
+    <label for="name">FUll Name</label>
+    <input type="text" for="name" id="name" name="name" required>
+<h1></h1>
+    <label for="email">Email id</label>
+    <input id="email" type="text" for="email" name="email" required>
+<h1></h1>
+    <label for="phonenumber">Phone Number</label>
+    <input id="number" type="number" for="phonenumber"name="phnum" required>
+    <h1></h1>
+    <label for="domain">Course Name</label>
+    <input id="domain" type="text" for="domain" name="domain"required> 
+    <h3 id="forname"></h3>
+    <label for="doubt">Doubt</label>
+    <input id="doubt" type="text" for="doubt">
+    
+<h1></h1>
+    <button type="submit" id="sub" class="btn">SUBMIT</button>
+</form>    
+</div></div>
+<script>
+
+        /*var name1=document.getElementById("name");
+        name1.addEventListener('blur',check);
+        var email1=document.getElementById("email");
+        email1.addEventListener('blur',check);
+        var phno=document.getElementById("number");
+        phno.addEventListener('blur',check);
+        var domain=document.getElementById("domain");
+        domain.addEventListener('blur',check);
+        var sub1=document.getElementById("sub");
+        sub1.addEventListener('click',check);
+
+        function check(){
+        if( email1.value=="" ||phno.value=="" || domain.value==""){
+            document.getElementById("forname").innerHTML="All fields are necessary";
+        }else{
+            document.getElementById("forname").innerHTML="";
+
+        }
+        } */   
+</script>
+</body>
+</html>

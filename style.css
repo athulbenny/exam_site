@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+:root{
+    --hue-neutral:200;
+    --hue-wrong:0;
+    --hue-correct:145;
+}
+
+
+
+body{
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
+}
+
+body.correct{
+    --hue: var(--hue-correct)
+}
+body.wrong{
+    --hue: var(--hue-wrong)
+}
+
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+.btn{
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: aliceblue;
+    outline: none;  
+}
+
+.btn:hover{
+    border-color: black;
+}
+.btn.correct{
+    --hue:var(--hue-correct);
+    color: black;
+}
+.btn.wrong{
+    --hue:var(--hue-wrong);
+}
+
+.start-btn, .next-btn{
+font-size: 1.5rem;
+font-weight: bold;
+padding: 10px 20px;
+}
+
+.control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
+
+#formbody{
+    position: relative;
+    width: 100%;
+    background-color: white;
+   
+}
+
+.formfill{
+    background-color: aliceblue;
+    padding: 10px;
+    font-size: large;
+    font-weight: 500;
+    flex-direction: row;
+    line-height: 1.2rem;
+    box-shadow:snow 5px 5px 0 0;
+}
+
+
+.imgcontainer{
+    
+    width: 100%;
+    height: 100%;
+}
+
+.remains{
+    position: absolute;
+    height: 75%;
+    width: 50%;
+    opacity: 0;
+    transition: 0.5s ease-out;  
+}
+
+.imgcontainer:hover{
+    opacity: 1;
+}
+.remains:hover{
+    opacity: 1;
+} 
+
+
+#doubt{
+    width: 45vw;
+    height: 10vh;
+}
+#forname{
+    font-size: small;
+    color: red;
+}
+#mainName{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30%;
+}
+
+#appDev, #webDev{
+    margin-top: 2em;
+    padding: .115rem;
+}
+
+
+#phoShop{
+    margin-top: 2em;
+    padding: .115rem;
+    top: 50%;
+    height: 55%;
+   
+}
+button:hover{
+    color: rgba(10, 41, 218, 0.918);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>initial</title>
+</head>
+<body id="formbody">
+    <img class="imgcontainer" src="DevcomBlack.png" alt="devcom">
+    <div class="remains">
+    <div id="myheading" style="position: initial; text-align: start;color:rgb(8, 8, 179);">
+<h1>DEVCOM GCEK</h1>
+<h2>ATTENDENCE REGISTER</h2>
+</div>
+<div style=" display: grid; justify-content: space-evenly;">
+    <div id="mainName">
+    <div id="appDev" class="btn">
+        <button> <h2>FLUTER APP DEVELOPMENT</h2></button>
+    </div>
+    <div id="webDev" class="btn">
+        <button> <h2>WEB DEVELOPMENT</h2></button>
+    </div>
+    <div id="phoShop" class="btn">
+        <button> <h2>PHOTOSHOP</h2></button>
+    </div>
+</div>
+<br>
+<br>
+<div style=" display: flex; justify-content: space-evenly;">
+    <button onclick=worldly()> <h4>Play Worldly</h4></button>
+    <button onclick=sampleQuiz() >
+         <h4>Take a sample quiz</h4></button>
+</div>
+</div>
+</div>
+    <script>
+        var appdev=document.getElementById('appDev');
+        appdev.addEventListener('click',changePage);
+        var webdev=document.getElementById('webDev');
+        webdev.addEventListener('click',changePage);
+        var phoshop=document.getElementById('phoShop');
+        phoshop.addEventListener('click',changePage);
+
+        function changePage(){
+            window.location.replace("initial.html")
+        }
+
+        function worldly(){
+            window.location.replace("worldly/index.html")
+        }
+        function sampleQuiz(){
+            window.location.replace("quiz/index.html")
+        }
+    </script>
+</body>
+</html>
